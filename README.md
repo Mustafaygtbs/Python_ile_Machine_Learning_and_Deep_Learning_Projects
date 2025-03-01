@@ -1,54 +1,43 @@
-# Diabetes Analysis
+# Makine Öğrenimi & Yapay Zeka Projeleri 🚀
+Bu repoda, makine öğrenimi (ML) ve yapay zeka (AI) alanında geliştirdiğim küçük çaplı projeleri bulabilirsiniz. Her proje, farklı bir algoritma veya teknik üzerine odaklanarak farklı veri setleriyle çalışmayı ve model performanslarını analiz etmeyi hedefler.
+
+## 📌 İçerik
+Bu repoda bulunan projeler, makine öğrenimi ve yapay zeka konularında çeşitli yaklaşımları içermektedir:
 
 
-This is the first data set that I have tried to analyse using appropriate regressions and more will follow.
+📊 Regresyon Modelleri (Doğrusal ve Polinomal Regresyon, Lojistik Regresyon)
+
+📈 Sınıflandırma Algoritmaları (KNN, Naive Bayes, Karar Ağaçları, Random Forest, SVM)
+
+🤖 Derin Öğrenme (Yapay Sinir Ağları, CNN, RNN)
+
+📡 Doğal Dil İşleme (NLP) (Metin Analizi, Sentiment Analysis, Tokenization)
+
+🎯 Kümeleme ve Öbekleme (K-Means, DBSCAN, Hiyerarşik Kümeleme)
+
+📌 Öneri Sistemleri (İçerik Tabanlı & İşbirlikçi Filtreleme)
+
+📷 Görüntü İşleme (OpenCV ile Görüntü Analizi, Object Detection)
+
+Her proje için kod, veri seti ve açıklayıcı dokümantasyon bulunmaktadır.
 
 
-This project focuses on analyzing diabetes data using the K-Nearest Neighbors (KNN) model. The primary objective is to predict whether a patient has diabetes based on diagnostic measurements included in the dataset.
+## 🛠 Kullanılan Teknolojiler
+Bu repoda kullanılan başlıca kütüphane ve araçlar:
 
-## Overview
+✅ Python
 
-Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy. The dataset used in this project is sourced from the National Institute of Diabetes and Digestive and Kidney Diseases. It contains several medical predictor variables and one target variable, indicating the presence of diabetes.
+✅ NumPy, Pandas - Veri işleme ve analiz
 
-## K-Nearest Neighbors (KNN) Model
+✅ Matplotlib, Seaborn - Veri görselleştirme
 
-K-Nearest Neighbors (KNN) is a simple, easy-to-implement supervised machine learning algorithm that can be used for both classification and regression problems. In this project, KNN is used to classify whether a patient has diabetes based on their medical measurements.
+✅ Scikit-Learn - Makine öğrenimi algoritmaları
 
-### How KNN Works
+✅ TensorFlow, Keras, PyTorch - Derin öğrenme modelleri
 
-- **Objective**: Determine the group of a new data point based on previously obtained points.
-- **Process**:
-  1. Identify the `K` nearest neighbor points.
-  2. Determine the most common group among these neighbors.
-  3. Assign the new point to this group.
+✅ NLTK, SpaCy - Doğal dil işleme
 
-- **Distance Calculation**: KNN uses the Euclidean distance to calculate the distance between points.
+✅ OpenCV - Görüntü işleme
 
-## Example
 
-An example of using the KNN model in this project:
-
-```python
-from sklearn.neighbors import KNeighborsClassifier
-import numpy as np
-
-# Load your dataset
-X = np.array([[1.5, 2.3], [3.1, 4.2], [1.2, 1.9], [5.1, 3.3]])
-y = np.array([0, 1, 0, 1])
-
-# Create the KNN model
-knn = KNeighborsClassifier(n_neighbors=3)
-
-# Fit the model
-knn.fit(X, y)
-
-# Predict a new data point
-new_point = np.array([[2.0, 2.5]])
-prediction = knn.predict(new_point)
-
-print("Predicted class:", prediction)
-```
-
-## Results
-
-The results section should summarize the findings and accuracy of the model. Include visualizations like confusion matrices, ROC curves, or any other relevant metrics.
+(Repoyu zamanla güncellemekteyim)
