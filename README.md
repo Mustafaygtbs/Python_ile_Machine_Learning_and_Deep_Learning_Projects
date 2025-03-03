@@ -1,54 +1,113 @@
-# Diabetes Analysis
+# Makine Öğrenimi & Yapay Zeka Projeleri 🚀
+Bu repoda, makine öğrenimi (ML) ve yapay zeka (AI) alanında geliştirdiğim küçük çaplı projeleri bulabilirsiniz. Her proje, farklı bir algoritma veya teknik üzerine odaklanarak farklı veri setleriyle çalışmayı ve model performanslarını analiz etmeyi hedefler.
+
+## 📌 İçerik
+Bu repoda bulunan projeler, makine öğrenimi ve yapay zeka konularında çeşitli yaklaşımları içermektedir:
 
 
-This is the first data set that I have tried to analyse using appropriate regressions and more will follow.
+📊 Regresyon Modelleri (Doğrusal ve Polinomal Regresyon, Lojistik Regresyon)
+
+📈 Sınıflandırma Algoritmaları (KNN, Naive Bayes, Karar Ağaçları, Random Forest, SVM)
+
+🤖 Derin Öğrenme (Yapay Sinir Ağları, CNN, RNN)
+
+📡 Doğal Dil İşleme (NLP) (Metin Analizi, Sentiment Analysis, Tokenization)
+
+🎯 Kümeleme ve Öbekleme (K-Means, DBSCAN, Hiyerarşik Kümeleme)
+
+📌 Öneri Sistemleri (İçerik Tabanlı & İşbirlikçi Filtreleme)
+
+📷 Görüntü İşleme (OpenCV ile Görüntü Analizi, Object Detection)
+
+Her proje için kod, veri seti ve açıklayıcı dokümantasyon bulunmaktadır.
 
 
-This project focuses on analyzing diabetes data using the K-Nearest Neighbors (KNN) model. The primary objective is to predict whether a patient has diabetes based on diagnostic measurements included in the dataset.
+## 🛠 Kullanılan Teknolojiler
+Bu repoda kullanılan başlıca kütüphane ve araçlar:
 
-## Overview
+✅ Python
 
-Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy. The dataset used in this project is sourced from the National Institute of Diabetes and Digestive and Kidney Diseases. It contains several medical predictor variables and one target variable, indicating the presence of diabetes.
+✅ NumPy, Pandas - Veri işleme ve analiz
 
-## K-Nearest Neighbors (KNN) Model
+✅ Matplotlib, Seaborn - Veri görselleştirme
 
-K-Nearest Neighbors (KNN) is a simple, easy-to-implement supervised machine learning algorithm that can be used for both classification and regression problems. In this project, KNN is used to classify whether a patient has diabetes based on their medical measurements.
+✅ Scikit-Learn - Makine öğrenimi algoritmaları
 
-### How KNN Works
+✅ TensorFlow, Keras, PyTorch - Derin öğrenme modelleri
 
-- **Objective**: Determine the group of a new data point based on previously obtained points.
-- **Process**:
-  1. Identify the `K` nearest neighbor points.
-  2. Determine the most common group among these neighbors.
-  3. Assign the new point to this group.
+✅ NLTK, SpaCy - Doğal dil işleme
 
-- **Distance Calculation**: KNN uses the Euclidean distance to calculate the distance between points.
+✅ OpenCV - Görüntü işleme
 
-## Example
+## Giriş & Orta Seviye Projeler
+1-Hasta Tahlil Veri Seti Kullanarak Şeker Hastalığını Tahmin Etme
 
-An example of using the KNN model in this project:
+Kaggle'dan alınan hasta tahlil veri seti kullanılarak lojistik regresyon ve karar ağaçları gibi algoritmalar ile şeker hastalığı tahmin edilecektir.
 
-```python
-from sklearn.neighbors import KNeighborsClassifier
-import numpy as np
+2-Emlak Fiyatlarını Yapay Zeka Kullanarak Tahmin Etme
 
-# Load your dataset
-X = np.array([[1.5, 2.3], [3.1, 4.2], [1.2, 1.9], [5.1, 3.3]])
-y = np.array([0, 1, 0, 1])
+Çoklu regresyon modelleri kullanılarak emlak fiyatlarını etkileyen faktörler analiz edilecek ve tahminleme yapılacaktır.
 
-# Create the KNN model
-knn = KNeighborsClassifier(n_neighbors=3)
+3- HR Departmanı için Polynomial Regression Kullanarak Maaş Skalası Hesaplama
 
-# Fit the model
-knn.fit(X, y)
+Polynomial Regression kullanarak farklı pozisyonlar ve deneyim seviyelerine göre maaş tahmini yapılacaktır.
 
-# Predict a new data point
-new_point = np.array([[2.0, 2.5]])
-prediction = knn.predict(new_point)
+4- IRIS Çiçeği Analizi ve PCA Kullanarak Özellik Sayısının Azaltılması
 
-print("Predicted class:", prediction)
-```
+PCA (Principal Component Analysis) kullanılarak IRIS veri setinde boyut indirgeme uygulanacak ve modelleme yapılacaktır.
 
-## Results
+5- İş Başvurularının Yapay Zeka ile Değerlendirmesi
 
-The results section should summarize the findings and accuracy of the model. Include visualizations like confusion matrices, ROC curves, or any other relevant metrics.
+Sınıflandırma algoritmaları (SVM, Random Forest, Naive Bayes) ile iş başvurularının uygunluk değerlendirmesi yapılacaktır.
+
+6- Yapay Zeka ile Müşteri Segmentasyonu
+
+K-Means kümeleme algoritması kullanılarak müşteri segmentasyonu gerçekleştirilecektir.
+
+## İleri Seviye Projeler
+7- IMDB Verileri Kullanılarak Film Tavsiye Sistemi (Recommendation System)
+
+Kullanıcıların izlediği ve beğendiği filmleri analiz ederek içerik tabanlı ve işbirlikçi filtreleme yöntemleriyle benzer filmler öneren bir sistem geliştirilecektir.
+
+8- Fotoğraflardaki El Yazısını Yapay Zeka ile Otomatik Tanıma
+
+CNN tabanlı derin öğrenme modelleri kullanılarak el yazısı karakterlerini tanıyan bir model geliştirilecektir.
+
+9- NLP ile IMDB Duygu Analizi
+
+Doğal dil işleme (NLP) teknikleri kullanılarak IMDB film yorumlarının olumlu veya olumsuz olup olmadığı analiz edilecektir.
+
+10- Advanced Müşteri Segmentasyonu Projesi
+
+MIT tarafından geliştirilen ileri seviye segmentasyon teknikleri kullanılarak kompleks müşteri verileri analiz edilecektir.
+
+11- San Francisco Crime Geographical K-Means Clustering Projesi
+
+San Francisco’daki suç verileri kullanılarak coğrafi kümeleme (geo-spatial clustering) uygulanacak ve harita üzerine görselleştirme yapılacaktır.
+
+12-Convolutional Neural Network (CNN) ile Görüntü Tanıma ve Sınıflandırma
+
+TensorFlow ve Keras kullanılarak binlerce resim üzerinde derin öğrenme modeli eğitilecek ve görüntü sınıflandırma işlemi gerçekleştirilecektir.
+
+13- Keras LSTM ile Uçak Yolcu Sayısı Tahmini (Zaman Serisi Tahmini)
+
+LSTM (Long Short-Term Memory) ağları kullanılarak havayolu şirketlerinin yolcu sayılarının zaman serisi tahmini yapılacaktır.
+
+14- Transfer Learning ile Görüntü Sınıflandırma (TensorFlow InceptionResNetV2)
+
+Önceden eğitilmiş InceptionResNetV2 modeli kullanılarak transfer öğrenme yöntemi ile resim sınıflandırma yapılacaktır.
+
+15- Deep Learning ile Uydu Fotoğraflarındaki Askeri Uçak Tiplerinin Tespit ve Sınıflandırılması
+
+Uydu görüntüleri üzerinde derin öğrenme teknikleri kullanılarak askeri uçak tespiti ve sınıflandırması yapılacaktır.
+
+16- Deep Learning için Ses Sinyal İşleme
+
+MFCC (Mel-Frequency Cepstral Coefficients) gibi sinyal işleme teknikleri kullanılarak ses verisi yapay zeka için uygun formata dönüştürülecektir.
+
+17- Deep Learning ile Ses Tanıma ve Sınıflandırma
+
+CNN tabanlı modeller ile ses dosyaları tanınıp sınıflandırılacaktır.
+
+
+(Repoyu zamanla güncellemekteyim)
