@@ -105,9 +105,5 @@ Uydu görüntüleri üzerinde derin öğrenme teknikleri kullanılarak askeri u�
 
 MFCC (Mel-Frequency Cepstral Coefficients) gibi sinyal işleme teknikleri kullanılarak ses verisi yapay zeka için uygun formata dönüştürülecektir.
 
-17- Deep Learning ile Ses Tanıma ve Sınıflandırma
-
 CNN tabanlı modeller ile ses dosyaları tanınıp sınıflandırılacaktır.
 
-
-(Repoyu zamanla güncellemekteyim)
